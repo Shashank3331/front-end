@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeyup="show()" id="myText">
+    <span id="write"></span>
+
+    <select name="" id="data" onchange="myChange()">
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="cycle">Cycle</option>
+    </select>
+     
+
+    <script>
+        var inp = document.querySelector("#myText");
+        var data = document.querySelector("#data");
+          function myChange(){
+            var raw = data.value;
+            alert(`You are selected ${raw}`)
+          }
+
+        function show(){
+            document.querySelector("#write").innerHTML = inp.value;
+        }
+    </script>
+
+    
+</body>
+</html>
