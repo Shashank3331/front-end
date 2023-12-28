@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fullScreen:fullscreen{
+            width: 100%;
+            height: 100vh;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <div id="fullScreen"></div>
+        <button id="btn">fullScreen</button>
+        <script>
+            var btn = document.querySelector("#btn");
+            var elem = document.querySelector("#fullScreen")
+            btn.onclick= function(){
+                elem.webkitRequestFullscreen()
+            }
+        </script>
+</body>
+</html>
