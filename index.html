@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 200vh;
+        }
+    </style>
+</head>
+<body onresize="alert('Document loaded')">
+     <button OnConteXtmenu="alert('Click event executed')">click</button>
+     <input type="text" onkeypress="console.log('key pressed')" onkeydown="console.log('key down')" onkeyup="console.log('key up')"  name="" id="">
+
+     <form action="" onsubmit="alert('Form is successfully submitted')" onreset="alert('form is reset')">
+        <input type="text"   onfocus="console.log('input focused')" onblur="console.log('focus ended')" >
+        <select onchange="console.log('Menu changed')">
+        <option value="">Car</option>
+    <option value="">Bike</option>
+  <option value="">Cycle</option>
+</select>
+<input type="text"onselect="alert('content selected')"  value="lorem ipsum dollet emit" name="" id="">
+        <input type="submit">
+
+        <button type="reset">reset</button>
+     </form>
+
+    
+     
+</body>
+</html>

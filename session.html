@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fullscreen:fullscreen{
+            width: 100%;
+            height: 100vh;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fullscreen">
+        <button id="cancle">cancel</button>
+    </div>
+     <button id="mybtn">click</button>
+    <script>
+    //     var str ={pincode: 201344,city: "greater noida"}
+    //     var obj =JSON.stringify(str)
+    //     localStorage.setItem("address",obj);
+
+    //     var getItem = localStorage.getItem("address")
+    //    var jadu = JSON.parse(getItem);
+    //     document.write(jadu.pincode)
+
+  var btn = document.querySelector("#mybtn");
+  var screen = document.querySelector("#fullscreen");
+    btn.addEventListener('click',function(){
+          screen.webkitRequestFullScreen()
+    })
+
+  var cancle = document.querySelector("#cancle");
+     cancle.addEventListener('click',function(){
+        screen.webkitexitFullScreen;
+     })
+var arr = ["red","green","blue","orange","pink","black","white"];
+    localStorage.setItem("color",arr);
+
+var data = localStorage.getItem("color")
+document.write(`<ul><li>${data}</li></ul>`)
+  localStorage.removeItem("address")
+    </script>
+</body>
+</html>
